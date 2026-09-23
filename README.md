@@ -174,13 +174,14 @@ try {
 }
 ```
 
-| Error Code             | Description                                |
-| ---------------------- | ------------------------------------------ |
-| `INVALID_URL`          | URL malformed or missing protocol          |
-| `DOMAIN_MISMATCH`      | Cookie domain doesn't match URL            |
-| `WEBKIT_UNAVAILABLE`   | WebKit requested on iOS < 11 or on tvOS    |
-| `PLATFORM_UNSUPPORTED` | Platform-specific method on wrong platform |
-| `NETWORK_ERROR`        | HTTP request failed                        |
+| Error Code             | Description                                             |
+| ---------------------- | ------------------------------------------------------- |
+| `INVALID_URL`          | URL malformed or missing protocol                       |
+| `DOMAIN_MISMATCH`      | Cookie domain doesn't match URL                         |
+| `WEBKIT_UNAVAILABLE`   | WebKit requested on iOS < 11 or on tvOS                 |
+| `WEBVIEW_UNAVAILABLE`  | Android System WebView is missing, disabled or updating |
+| `PLATFORM_UNSUPPORTED` | Platform-specific method on wrong platform              |
+| `NETWORK_ERROR`        | HTTP request failed                                     |
 
 ## Migration from @react-native-cookies/cookies
 

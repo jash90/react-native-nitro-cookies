@@ -17,7 +17,7 @@ pod install
 xcodebuild build-for-testing \
   -workspace NitroCookiesTV.xcworkspace -scheme NitroCookiesTV \
   -destination 'generic/platform=tvOS Simulator' \
-  -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO
+  -derivedDataPath DerivedData ARCHS="$(uname -m)" CODE_SIGNING_ALLOWED=NO
 
 device=$(xcrun simctl list devices available --json | node -e '
   const { devices } = JSON.parse(require("fs").readFileSync(0, "utf8"));

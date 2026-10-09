@@ -11,7 +11,7 @@ target 'NitroCookiesTV' do
   pod 'NitroCookies', :path => File.join(repo, 'package')
 
   target 'CookieTests' do
-    inherit! :complete
+    inherit! :search_paths
   end
 
   post_install do |installer|
